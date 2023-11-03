@@ -10,27 +10,27 @@ import 'package:pointycastle/src/registry/registry.dart';
 // ignore: camel_case_types
 class ECCurve_secp224r1 extends ECDomainParametersImpl {
   static final FactoryConfig factoryConfig = StaticFactoryConfig(
-      ECDomainParameters, 'secp224r1', () => ECCurve_secp224r1());
+      ECDomainParameters, ["s","e","c","p","2","2","4","r","1",].join(), () => ECCurve_secp224r1());
 
   factory ECCurve_secp224r1() => constructFpStandardCurve(
-      'secp224r1', ECCurve_secp224r1._make,
+      ["s","e","c","p","2","2","4","r","1",].join(), ECCurve_secp224r1._make,
       q: BigInt.parse(
-          'ffffffffffffffffffffffffffffffff000000000000000000000001',
+          ["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","1",].join(),
           radix: 16),
       a: BigInt.parse(
-          'fffffffffffffffffffffffffffffffefffffffffffffffffffffffe',
+          ["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","e","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","e",].join(),
           radix: 16),
       b: BigInt.parse(
-          'b4050a850c04b3abf54132565044b0b7d7bfd8ba270b39432355ffb4',
+          ["b","4","0","5","0","a","8","5","0","c","0","4","b","3","a","b","f","5","4","1","3","2","5","6","5","0","4","4","b","0","b","7","d","7","b","f","d","8","b","a","2","7","0","b","3","9","4","3","2","3","5","5","f","f","b","4",].join(),
           radix: 16),
       g: BigInt.parse(
-          '04b70e0cbd6bb4bf7f321390b94a03c1d356c21122343280d6115c1d21bd376388b5f723fb4c22dfe6cd4375a05a07476444d5819985007e34',
+          ["0","4","b","7","0","e","0","c","b","d","6","b","b","4","b","f","7","f","3","2","1","3","9","0","b","9","4","a","0","3","c","1","d","3","5","6","c","2","1","1","2","2","3","4","3","2","8","0","d","6","1","1","5","c","1","d","2","1","b","d","3","7","6","3","8","8","b","5","f","7","2","3","f","b","4","c","2","2","d","f","e","6","c","d","4","3","7","5","a","0","5","a","0","7","4","7","6","4","4","4","d","5","8","1","9","9","8","5","0","0","7","e","3","4",].join(),
           radix: 16),
       n: BigInt.parse(
-          'ffffffffffffffffffffffffffff16a2e0b8f03e13dd29455c5c2a3d',
+          ["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","1","6","a","2","e","0","b","8","f","0","3","e","1","3","d","d","2","9","4","5","5","c","5","c","2","a","3","d",].join(),
           radix: 16),
       h: BigInt.parse('1', radix: 16),
-      seed: BigInt.parse('bd71344799d5c7fcdc45b59fa3b9ab8f6a948bc5',
+      seed: BigInt.parse(["b","d","7","1","3","4","4","7","9","9","d","5","c","7","f","c","d","c","4","5","b","5","9","f","a","3","b","9","a","b","8","f","6","a","9","4","8","b","c","5",].join(),
           radix: 16)) as ECCurve_secp224r1;
 
   static ECCurve_secp224r1 _make(String domainName, ECCurve curve, ECPoint G,

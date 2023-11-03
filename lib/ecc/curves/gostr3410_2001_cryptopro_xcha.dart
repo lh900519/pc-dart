@@ -11,24 +11,24 @@ import 'package:pointycastle/src/registry/registry.dart';
 class ECCurve_gostr3410_2001_cryptopro_xcha extends ECDomainParametersImpl {
   static final FactoryConfig factoryConfig = StaticFactoryConfig(
       ECDomainParameters,
-      'GostR3410-2001-CryptoPro-XchA',
+      ["G","o","s","t","R","3","4","1","0","-","2","0","0","1","-","C","r","y","p","t","o","P","r","o","-","X","c","h","A",].join(),
       () => ECCurve_gostr3410_2001_cryptopro_xcha());
 
   factory ECCurve_gostr3410_2001_cryptopro_xcha() => constructFpStandardCurve(
-      'GostR3410-2001-CryptoPro-XchA',
+      ["G","o","s","t","R","3","4","1","0","-","2","0","0","1","-","C","r","y","p","t","o","P","r","o","-","X","c","h","A",].join(),
       ECCurve_gostr3410_2001_cryptopro_xcha._make,
       q: BigInt.parse(
-          'fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd97',
+          ["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","d","9","7",].join(),
           radix: 16),
       a: BigInt.parse(
-          'fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd94',
+          ["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","d","9","4",].join(),
           radix: 16),
-      b: BigInt.parse('a6', radix: 16),
+      b: BigInt.parse(["a","6",].join(), radix: 16),
       g: BigInt.parse(
-          '0400000000000000000000000000000000000000000000000000000000000000018d91e471e0989cda27df505a453f2b7635294f2ddf23e3b122acc99c9e9f1e14',
+          ["0","4","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","1","8","d","9","1","e","4","7","1","e","0","9","8","9","c","d","a","2","7","d","f","5","0","5","a","4","5","3","f","2","b","7","6","3","5","2","9","4","f","2","d","d","f","2","3","e","3","b","1","2","2","a","c","c","9","9","c","9","e","9","f","1","e","1","4",].join(),
           radix: 16),
       n: BigInt.parse(
-          'ffffffffffffffffffffffffffffffff6c611070995ad10045841b09b761b893',
+          ["f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","6","c","6","1","1","0","7","0","9","9","5","a","d","1","0","0","4","5","8","4","1","b","0","9","b","7","6","1","b","8","9","3",].join(),
           radix: 16),
       h: BigInt.parse('1', radix: 16),
       seed: null) as ECCurve_gostr3410_2001_cryptopro_xcha;

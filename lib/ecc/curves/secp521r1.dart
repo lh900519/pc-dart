@@ -10,26 +10,26 @@ import 'package:pointycastle/src/registry/registry.dart';
 // ignore: camel_case_types
 class ECCurve_secp521r1 extends ECDomainParametersImpl {
   static final FactoryConfig factoryConfig = StaticFactoryConfig(
-      ECDomainParameters, 'secp521r1', () => ECCurve_secp521r1());
+      ECDomainParameters, ["s","e","c","p","5","2","1","r","1",].join(), () => ECCurve_secp521r1());
 
   factory ECCurve_secp521r1() => constructFpStandardCurve(
-      'secp521r1', ECCurve_secp521r1._make,
-      q: BigInt.parse('1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff',
+      ["s","e","c","p","5","2","1","r","1",].join(), ECCurve_secp521r1._make,
+      q: BigInt.parse(["1","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f",].join(),
           radix: 16),
       a: BigInt.parse(
-          '1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc',
+          ["1","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","c",].join(),
           radix: 16),
       b: BigInt.parse(
-          '51953eb9618e1c9a1f929a21a0b68540eea2da725b99b315f3b8b489918ef109e156193951ec7e937b1652c0bd3bb1bf073573df883d2c34f1ef451fd46b503f00',
+          ["5","1","9","5","3","e","b","9","6","1","8","e","1","c","9","a","1","f","9","2","9","a","2","1","a","0","b","6","8","5","4","0","e","e","a","2","d","a","7","2","5","b","9","9","b","3","1","5","f","3","b","8","b","4","8","9","9","1","8","e","f","1","0","9","e","1","5","6","1","9","3","9","5","1","e","c","7","e","9","3","7","b","1","6","5","2","c","0","b","d","3","b","b","1","b","f","0","7","3","5","7","3","d","f","8","8","3","d","2","c","3","4","f","1","e","f","4","5","1","f","d","4","6","b","5","0","3","f","0","0",].join(),
           radix: 16),
       g: BigInt.parse(
-          '0400c6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66011839296a789a3bc0045c8a5fb42c7d1bd998f54449579b446817afbd17273e662c97ee72995ef42640c550b9013fad0761353c7086a272c24088be94769fd16650',
+          ["0","4","0","0","c","6","8","5","8","e","0","6","b","7","0","4","0","4","e","9","c","d","9","e","3","e","c","b","6","6","2","3","9","5","b","4","4","2","9","c","6","4","8","1","3","9","0","5","3","f","b","5","2","1","f","8","2","8","a","f","6","0","6","b","4","d","3","d","b","a","a","1","4","b","5","e","7","7","e","f","e","7","5","9","2","8","f","e","1","d","c","1","2","7","a","2","f","f","a","8","d","e","3","3","4","8","b","3","c","1","8","5","6","a","4","2","9","b","f","9","7","e","7","e","3","1","c","2","e","5","b","d","6","6","0","1","1","8","3","9","2","9","6","a","7","8","9","a","3","b","c","0","0","4","5","c","8","a","5","f","b","4","2","c","7","d","1","b","d","9","9","8","f","5","4","4","4","9","5","7","9","b","4","4","6","8","1","7","a","f","b","d","1","7","2","7","3","e","6","6","2","c","9","7","e","e","7","2","9","9","5","e","f","4","2","6","4","0","c","5","5","0","b","9","0","1","3","f","a","d","0","7","6","1","3","5","3","c","7","0","8","6","a","2","7","2","c","2","4","0","8","8","b","e","9","4","7","6","9","f","d","1","6","6","5","0",].join(),
           radix: 16),
       n: BigInt.parse(
-          '1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa51868783bf2f966b7fcc0148f709a5d03bb5c9b8899c47aebb6fb71e91386409',
+          ["1","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","f","a","5","1","8","6","8","7","8","3","b","f","2","f","9","6","6","b","7","f","c","c","0","1","4","8","f","7","0","9","a","5","d","0","3","b","b","5","c","9","b","8","8","9","9","c","4","7","a","e","b","b","6","f","b","7","1","e","9","1","3","8","6","4","0","9",].join(),
           radix: 16),
       h: BigInt.parse('1', radix: 16),
-      seed: BigInt.parse('d09e8800291cb85396cc6717393284aaa0da64ba',
+      seed: BigInt.parse(["d","0","9","e","8","8","0","0","2","9","1","c","b","8","5","3","9","6","c","c","6","7","1","7","3","9","3","2","8","4","a","a","a","0","d","a","6","4","b","a",].join(),
           radix: 16)) as ECCurve_secp521r1;
 
   static ECCurve_secp521r1 _make(String domainName, ECCurve curve, ECPoint G,
